@@ -264,12 +264,13 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     width: 370px;
     height: 70px;
-    padding: 27px 0px;
     color: var(--foth-text-color);
     background: rgba(47, 48, 58, 0.8);
     transform: translateY(-100%);
@@ -347,12 +348,18 @@ body {
     margin-right: 30px;
     color: var(--icon-color);
     background-color: var(--foth-text-color);
+    transition: border-color var(--function-time);
+}
+.clients-list:hover,
+.clients-list:focus {
+    border-color: var(--accent-color);
 }
 .clients-list-icon {
     fill: var(--icon-color);
     transition: fill var(--function-time);
 }
-.clients-list-icon:hover {
+.clients-list-icon:hover,
+.clients-list-icon:focus {
     fill: var(--accent-color);
 }
 /*===footer===*/
